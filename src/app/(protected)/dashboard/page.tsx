@@ -1,6 +1,6 @@
-import { testDatabaseConnection } from "@/actions/login";
+import ScheduleForm from "./_components/schedule-form";
 
 export default async function Page(){
-    const isConnected = await testDatabaseConnection();
-    return <h1>Dashboard</h1>
+
+    return <ScheduleForm/>
 }
